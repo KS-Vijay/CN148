@@ -90,25 +90,25 @@ form h3{
 <body>
   <div class="wrapper">
     <h2 style="font-style: oblique; text-align: center; font-weight: 600;">Sign Up</h2>
-    <form action="">
+    <form id='signupForm' action="">
 
       <div class="input-box">
-        <input type="text" placeholder="Enter your name" required>
+        <input id="name" type="text" placeholder="Enter your name" required>
         <i class='bx bxs-user'></i>
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Enter your email" required>
+        <input id="mail" type="text" placeholder="Enter your email" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Create password" required>
+        <input id="password" type="password" placeholder="Create password" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Confirm password" required>
+        <input id="confpass" type="password" placeholder="Confirm password" required>
         <i class='bx bxs-lock-alt' ></i>
       </div>
       <div class="input-box">
         <label for="Confirmation" style="font-style: oblique; color: aliceblue; font-weight: bold;">Who Are You?  </label>
-            <select id="deepak" name="eventType" required>
+            <select id="ooa" name="eventType" required>
                 <option value="Organiser">Organiser</option>
                 <option value="Attendee">Attendee</option>
             </select>
@@ -117,8 +117,12 @@ form h3{
         <input type="checkbox" required>
         <h3 style="font-style: oblique; color: aliceblue; font-weight: bold;">I accept all terms & condition</h3>
       </div><br>
-      <button type="submit" class="btn">Login</button>
+      <button id="submit" type="submit" class="btn">Login</button>
     </form>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="./index.js"></script>
+
 </body>
 </html>
