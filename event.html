@@ -73,7 +73,7 @@
             text-align: center;
         }
         .content h1{
-            font-size: 160px;
+            font-size: 150px;
             color:transparent;
             font-weight: 600;
             transition: 0.5s;
@@ -242,7 +242,7 @@
             
         }
         .row .col .i1{
-            width: 60%;
+            width: 80%;
         }
         .row .col .i2{
             width: 80%;
@@ -389,51 +389,14 @@
             </video>
 
         <nav class="navbar">
-            <img src="https://drive.google.com/uc?export=view&id=1Jd4Vl13tMRJ2-wui7h3A2HkvmZkFk92B" class="logo">
+            <img src="https://drive.google.com/uc?export=view@id=1oALrPJVjr8y8CbT1Yb6Ksav_oO4a9feS" class="logo">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#banner1">Trendings</a></li>
                 <li><a href="#banner2">Gallery</a></li>
                 <li><a href="#banner3">Events</a></li>
-                <li><a href="#contactPopup" onclick="openContactForm()">Contact US</a></li>
-                <li><a href="#banner4">Sign Up/Sign In</a></li>
-                <div id="contactPopup" class="popup">
-                    <div class="popup-content">
-                      <span class="close-btn" onclick="closeContactForm()">&times;</span>
-                      <form>
-                        <h2>Contact Us</h2>
-                        <div class="form-element">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
-                        </div>
-                
-                        <div class="form-container">
-                        <label for="email" >Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
-                        </div>
-                
-                        <div class="form-element">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Enter your Message" required></textarea><br><br>
-                        </div>
-                         
-                        <div class="form-element">
-                        <input type="submit" value="Submit">
-                        </div>
-                
-                      </form>
-                    </div>
-                  </div>
-                  
-                  <script>
-                  function openContactForm() {
-                    document.getElementById("contactPopup").style.display = "block";
-                  }
-                  
-                  function closeContactForm() {
-                    document.getElementById("contactPopup").style.display = "none";
-                  }
-                  </script>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="login.html" target="_blank">Login/Sign Up</a></li>
            </ul>
         </nav>
         <div class="content">
@@ -576,5 +539,6 @@
         <p>&copy; 2024 EventElevate by TEAM NINJA. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 </body>
 </html>
